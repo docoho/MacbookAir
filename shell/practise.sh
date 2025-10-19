@@ -4,5 +4,4 @@
 # Uage: sh scripname.sh
 # Function: To archive log file
 
-SUCESS_STATUS=0
-FAILURE_STATUS=1
+date
