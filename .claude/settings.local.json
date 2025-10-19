@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 install:*)",
+      "mcp__web-search-prime__webSearchPrime",
+      "WebSearch"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
