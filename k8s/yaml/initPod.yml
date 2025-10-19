@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadate:
+  name: initpod
+  labels:
+   app: initializer
+spec: 
+  initContainers:
+   - name: init-ctr
+     image: busybox:1.28.4
+     command: ['sh','-c','until nslookup www.google.com; do echo waiting for k8s service; sleeps 1;done; echo k8s service was found!']
+  containers: 
+   - name: web-ctr
+     image: nigelpoulton/web-app:1.0
+     port:
+      - containerPort: 8080
