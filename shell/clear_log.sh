@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Log cleanup script for /tmp/dumas/* 
 # Runs on the last day of every month
 # Author: Operations Team
