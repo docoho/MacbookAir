@@ -1,69 +1,80 @@
-<<<<<<< HEAD
 # MacbookAir
-common scripts
-=======
-# 贪吃蛇游戏 🐍
 
-一款使用 Python 和 Pygame 开发的界面优美的贪吃蛇游戏。
+Personal scripts and utilities repository for automation, system administration, and learning purposes.
 
-## 游戏特色
+## Overview
 
-- 🎨 **精美界面**: 渐变背景、动画效果、视觉层次丰富
-- 🎮 **流畅操作**: 支持方向键和WASD双控制模式
-- 🏆 **计分系统**: 实时显示分数，挑战高分
-- 🔄 **重新开始**: 游戏结束后可快速重新开始
-- 👀 **动画效果**: 食物跳动动画、蛇身渐变效果
+This repository contains a collection of shell scripts, Python programs, and Kubernetes configurations used for various automation tasks and practice exercises.
 
-## 安装要求
+## Directory Structure
 
-确保你已安装 Python 3.7 或更高版本，然后安装 Pygame：
-
-```bash
-pip install -r requirements.txt
+```
+.
+├── shell/          # Bash scripts for system automation
+├── python/         # Python scripts and programs
+├── k8s/yaml/       # Kubernetes pod definitions
+└── docker/         # Docker-related files
 ```
 
-或者直接安装：
+## Contents
+
+### Shell Scripts
+
+- **clear_log.sh** - Automated log cleanup script
+  - Runs monthly on the last day of each month
+  - Cleans log files older than 30 days from `/tmp/dumas/`
+  - Comprehensive logging to `/var/log/log_cleanup.log`
+
+- **vim_practice.sh** - Vim editor practice script
+
+### Python Programs
+
+- **hello_response.py** - Interactive Python program with robust input handling
+
+### Kubernetes
+
+- **initPod.yml** - Kubernetes pod configuration file
+
+## Usage
+
+### Running Shell Scripts
+
 ```bash
-pip install pygame
+bash shell/clear_log.sh
+bash shell/vim_practice.sh
 ```
 
-## 游戏控制
-
-- **方向键** 或 **WASD**: 控制蛇的移动方向
-- **空格键**: 游戏结束后重新开始
-- **ESC**: 退出游戏
-
-## 游戏规则
-
-1. 🎯 控制贪吃蛇吃食物（红色圆形）
-2. 📈 每吃一个食物得10分，蛇身增长一节
-3. 💥 避免撞墙或撞到自己的身体
-4. 🏆 挑战获得更高的分数！
-
-## 运行游戏
+### Running Python Scripts
 
 ```bash
-python snake_game.py
+python3 python/hello_response.py
 ```
 
-## 技术特点
+### Installing Python Dependencies
 
-- **面向对象设计**: 清晰的代码结构
-- **碰撞检测**: 精确的边界和自身碰撞检测
-- **动画系统**: 流畅的视觉效果
-- **响应式UI**: 适配不同屏幕尺寸
+```bash
+pip3 install -r requirements.txt
+```
 
-## 系统要求
+### Applying Kubernetes Configurations
 
+```bash
+kubectl apply -f k8s/yaml/initPod.yml
+```
+
+## Features
+
+- **Comprehensive Documentation**: All scripts include detailed inline comments
+- **Error Handling**: Robust error checking and logging
+- **Best Practices**: Follows shell scripting and Python coding standards
+- **Educational**: Well-documented for learning purposes
+
+## Requirements
+
+- Bash shell
 - Python 3.7+
-- Pygame 2.5.2+
-- 支持图形界面的操作系统
+- kubectl (for Kubernetes configurations)
 
-## 玩法提示
+## License
 
-- 合理规划路线，避免把自己困在角落
-- 利用整个游戏空间，为长蛇身留出足够空间
-- 保持冷静，贪吃但不贪心！
-
-享受游戏吧！🎮
->>>>>>> 2f60107 (Initial commit)
+MIT License - See LICENSE file for details

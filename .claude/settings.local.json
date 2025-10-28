@@ -3,7 +3,10 @@
     "allow": [
       "Bash(pip3 install:*)",
       "mcp__web-search-prime__webSearchPrime",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git add shell/clear_log.sh)",
+      "Bash(git commit -m \"Add comprehensive inline documentation to clear_log.sh\n\nAdded detailed line-by-line annotations explaining:\n- Purpose of each function and variable\n- Bash command syntax and flags\n- Control flow logic and return values\n- Process substitution and file handling techniques\n\nThis improves code maintainability and helps developers understand the log cleanup script''s implementation.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\")",
+      "Bash(git push)"
     ],
     "deny": [],
     "ask": []
