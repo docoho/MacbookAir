@@ -6,7 +6,11 @@
       "WebSearch",
       "Bash(git add shell/clear_log.sh)",
       "Bash(git commit -m \"Add comprehensive inline documentation to clear_log.sh\n\nAdded detailed line-by-line annotations explaining:\n- Purpose of each function and variable\n- Bash command syntax and flags\n- Control flow logic and return values\n- Process substitution and file handling techniques\n\nThis improves code maintainability and helps developers understand the log cleanup script''s implementation.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\")",
-      "Bash(git push)"
+      "Bash(git push)",
+      "mcp__contexty7__resolve-library-id",
+      "Bash(git add README.md)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nResolve merge conflict and update README with accurate project description\n\n- Fixed merge conflict between ''common scripts'' and Snake game descriptions\n- Added comprehensive project overview and structure\n- Documented all scripts and utilities with usage examples\n- Included features, requirements, and license information\n- Removed outdated Snake game content that doesn''t match repository contents\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit -m \"Resolve merge conflict and update README with accurate project description\n\n- Fixed merge conflict between ''common scripts'' and Snake game descriptions\n- Added comprehensive project overview and structure\n- Documented all scripts and utilities with usage examples\n- Included features, requirements, and license information\n- Removed outdated Snake game content that doesn''t match repository contents\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\")"
     ],
     "deny": [],
     "ask": []
